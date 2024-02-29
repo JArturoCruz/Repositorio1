@@ -1,0 +1,58 @@
+<p>segundo-dia works!</p>
+<button class="btn btn-primary"(click)="clickButton('danger')">cambio </button>
+
+<div *ngIf="variable === 'success'">
+<button class="btn btn-success">success</button>
+{{variable}}
+</div>
+<div *ngIf="variable === 'danger'">
+<button class="btn btn-danger">danger</button>
+
+{{variable}}
+</div>
+<div>
+
+    <div *ngFor="let itemuser of user">
+<li>
+    {{itemuser.name}}
+</li>
+<li>
+    {{itemuser.description}}
+</li>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let itemuser of user">
+            <th>{{itemuser.name}}</th>
+            <td>{{itemuser.description}}</td>
+            
+         
+          </tr>
+        </tbody>
+      </table>
+       
+    </div>
+
+   <h1>INPUTS</h1>
+   <span>Nombres</span>
+  <input type="text" class="form-control" [(ngModel)]="name" >
+  <span>Descripciones</span>
+<input type="text" class="form-control" [(ngModel)]="description">
+{{name}}
+{{description}}
+<form [formGroup]="formulariouser">
+    <span>Nombres</span>
+    <input type="text" class="form-control" formControlName="name" >
+    <span>Descripciones</span>
+  <input type="text" class="form-control" formControlName="description">
+  <button class="btn btn-primary" (click)="SubmitForm()"></button>
+</form>
+
+ 
+

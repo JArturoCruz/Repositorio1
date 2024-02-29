@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Router } from 'express';
 
 @Component({
   selector: 'app-segundo-dia',
@@ -56,6 +57,6 @@ console.log("Se inicio el constructor")
 clickButton(text:string){
  this.variable = text
 }
-  }
+}
 
 

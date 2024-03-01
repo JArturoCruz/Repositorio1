@@ -24,6 +24,7 @@ this.servicio.obtenerLista().subscribe(resp =>{
 )
 }
 
+
 editarTexto(text:string){
   console.log(text);
   return text;

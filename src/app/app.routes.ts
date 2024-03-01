@@ -3,6 +3,7 @@ import path from 'node:path';
 import { PrimerDiaComponent } from './primer-dia/primer-dia.component';
 import { Component } from '@angular/core';
 import { SegundoDiaComponent } from './segundo-dia/segundo-dia.component';
+import { TercerDiaComponent } from './tercer-dia/tercer-dia.component';
 
 export const routes: Routes = [
     {
@@ -16,5 +17,10 @@ export const routes: Routes = [
     {
         path: 'segundo-dia',
         component: SegundoDiaComponent
+    },
+    {
+        path: 'tercer-dia',
+        component: TercerDiaComponent
     }
+
 ];
